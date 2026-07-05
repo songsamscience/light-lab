@@ -67,7 +67,9 @@ button{-webkit-tap-highlight-color:transparent;cursor:pointer;border:none;backgr
 .brand p{margin:2px 0 0;color:var(--muted);font-size:clamp(.72rem,1.5vw,.82rem);font-weight:500}
 .brand .kbd{color:var(--ink-2)}
 .top-actions{display:flex;gap:8px;flex:0 0 auto}
-.icon-btn{display:inline-flex;align-items:center;gap:7px;height:42px;padding:0 14px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--ink);font-size:.84rem;font-weight:600;transition:transform .15s,background .15s,border-color .15s}
+.icon-btn{text-decoration:none;display:inline-flex;align-items:center;gap:7px;height:42px;padding:0 14px;border-radius:999px;background:var(--chip);border:1px solid var(--line);color:var(--ink);font-size:.84rem;font-weight:600;transition:transform .15s,background .15s,border-color .15s}
+.brand-yt:hover{border-color:rgba(255,45,45,.6)}
+.brand-ig:hover{border-color:rgba(214,41,118,.65)}
 .icon-btn:hover{background:var(--chip-h);border-color:var(--line-2);transform:translateY(-1px)}
 .icon-btn:active{transform:translateY(0)}
 .icon-btn svg{width:17px;height:17px}
@@ -265,6 +267,14 @@ footer b{color:var(--ink-2)}
         <svg id="themeIc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
         <span class="lbl" id="themeLbl">라이트 모드</span>
       </button>
+      <a class="icon-btn brand-yt" href="https://www.youtube.com/@songsamscience" target="_blank" rel="noopener noreferrer" aria-label="송쌤과학 유튜브 채널 열기" title="송쌤과학 유튜브">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.8" y="5.6" width="20.4" height="12.8" rx="3.8" fill="#FF0000"/><path d="M10 8.9v6.2l5.4-3.1L10 8.9Z" fill="#fff"/></svg>
+        <span class="lbl">유튜브</span>
+      </a>
+      <a class="icon-btn brand-ig" href="https://www.instagram.com/songsamscience/" target="_blank" rel="noopener noreferrer" aria-label="송쌤과학 인스타그램 열기" title="송쌤과학 인스타그램">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><defs><linearGradient id="igGrad" x1="3" y1="21" x2="21" y2="3" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/><stop offset=".62" stop-color="#D62976"/><stop offset="1" stop-color="#962FBF"/></linearGradient></defs><rect x="3" y="3" width="18" height="18" rx="5.4" stroke="url(#igGrad)" stroke-width="2.1"/><circle cx="12" cy="12" r="4" stroke="url(#igGrad)" stroke-width="2.1"/><circle cx="17.2" cy="6.8" r="1.3" fill="url(#igGrad)"/></svg>
+        <span class="lbl">인스타그램</span>
+      </a>
       <button class="icon-btn" id="fullBtn" aria-label="전체화면">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
         <span class="lbl">전체화면</span>
